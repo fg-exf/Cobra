@@ -64,7 +64,7 @@ have children commands and optionally run an action.
 
 In the example above, 'server' is the command.
 
-[More about cobra.Command](https://pkg.go.dev/github.com/spf13/cobra#Command)
+[More about cobra.Command](https://pkg.go.dev/github.com/fg-exf/cobra#Command)
 
 ## Flags
 
@@ -84,13 +84,13 @@ Using Cobra is easy. First, use `go get` to install the latest version
 of the library.
 
 ```
-go get -u github.com/spf13/cobra@latest
+go get -u github.com/fg-exf/cobra@latest
 ```
 
 Next, include Cobra in your application:
 
 ```go
-import "github.com/spf13/cobra"
+import "github.com/fg-exf/Cobra"
 ```
 
 # Usage
@@ -101,7 +101,7 @@ develop a Cobra-based application. It is the easiest way to incorporate Cobra in
 It can be installed by running:
 
 ```
-go install github.com/spf13/cobra-cli@latest
+go install github.com/fg-exf/Cobra-cli@latest
 ```
 
 For complete details on using the Cobra-CLI generator, please read [The Cobra Generator README](https://github.com/spf13/cobra-cli/blob/main/README.md)
