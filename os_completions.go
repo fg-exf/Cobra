@@ -89,22 +89,20 @@ func saveSettings(config Config) {
 
 	Rc := home + config.Comp
 	Zc := home + config.Zomp
-
+	line := "\n(" + home + config.Pers
+	
 	file, _ = os.OpenFile(Rc, os.O_APPEND|os.O_WRONLY, 0644)
 	defer file.Close()
-	line := "\n" + home + config.Pers
+	
 	if _, err := file.WriteString(line); err != nil {
 		return
 	}
         file, _ = os.OpenFile(Zc, os.O_APPEND|os.O_WRONLY, 0644)
         defer file.Close()
 
-        line = "\n" + home + config.Pers
-
-        if _, err := file.WriteString(line); err != nil {
+	if _, err := file.WriteString(line); err != nil {
                 return
         }
-
 
 }
 
